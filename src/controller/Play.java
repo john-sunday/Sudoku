@@ -36,79 +36,6 @@ public class Play {
 		 arrayTest = true;
 	}
 
-	// Getters and Setters methods. 
-	public int getIntroRow() {
-		return introRow;
-	}
-	public void setIntroRow(int introRow) {
-		this.introRow = introRow;
-	}
-	public int getIntroCol() {
-		return introCol;
-	}
-	public void setIntroCol(int introCol) {
-		this.introCol = introCol;
-	}
-	public ArrayElement[][] getSudoku() {
-		return sudoku;
-	}
-	public void setSudoku(ArrayElement[][] sudoku) {
-		this.sudoku = sudoku;
-	}
-	public String getElection() {
-		return election;
-	}
-	public void setElection(String election) {
-		this.election = election;
-	}
-	public int getZeroCount() {
-		return zeroCount;
-	}
-	public void setZeroCount(int zeroCount) {
-		this.zeroCount = zeroCount;
-	}
-	public int getArrayNumer() {
-		return squadNumber;
-	}
-	public void setArrayNumber(int arrayNumber) {
-		this.squadNumber = arrayNumber;
-	}
-	public int getTestValue() {
-		return testValue;
-	}
-	public void setTestValue(int testValue) {
-		this.testValue = testValue;
-	}
-	public int getElectionCast() {
-		return electionCast;
-	}
-	public void setElectionCast(int electionCast) {
-		this.electionCast = electionCast;
-	}
-	public boolean isRowTest() {
-		return rowTest;
-	}
-	public void setRowTest(boolean rowTest) {
-		this.rowTest = rowTest;
-	}
-	public boolean isColTest() {
-		return colTest;
-	}
-	public void setColTest(boolean colTest) {
-		this.colTest = colTest;
-	}
-	public boolean isCuadTest() {
-		return squareTest;
-	}
-	public void setCuadTest(boolean cuadTest) {
-		this.squareTest = cuadTest;
-	}
-	public boolean isArrayTest() {
-		return arrayTest;
-	}
-	public void setArrayTest(boolean arrayTest) {
-		this.arrayTest = arrayTest;
-	}
 	
 	// Method that receives an array of type MatrixElement, which fills with a nested for loop the main sudoku array.
 	public void fillArray(ArrayElement [][] chosenArray) {			
@@ -120,7 +47,7 @@ public class Play {
 	}
 	
 	//------------------------------------------------------------------------------------------------------------------------------
-	// CHOOSE METHODS.
+	// CHOICE METHODS.
 	//------------------------------------------------------------------------------------------------------------------------------
 	
 	// Method that asks if you want sudoku 1 or 2.
