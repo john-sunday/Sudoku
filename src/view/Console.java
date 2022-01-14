@@ -13,7 +13,10 @@ public class Console {
 	}
 	public static void showLineBreak(String cadena) {
 		System.out.format("%s\n", cadena);
-	}	
+	}
+	public static void println(String cadena) {
+		System.out.println(cadena);
+	}
 	public static void showInlineString(String cadena) {
 		System.out.format("%s", cadena);
 	}		

@@ -289,7 +289,7 @@ public class Play {
 		
 		switch(squareNum) {		
 		case 1:
-			int []array1 = new int[9];
+			int[]array1 = new int[9];
 			array1[0] = sudoku[0][0].getValue(); array1[1] = sudoku[0][1].getValue(); array1[2] = sudoku[0][2].getValue(); 
 			array1[3] = sudoku[1][0].getValue(); array1[4] = sudoku[1][1].getValue(); array1[5] = sudoku[1][2].getValue();
 			array1[6] = sudoku[2][0].getValue(); array1[7] = sudoku[2][1].getValue(); array1[8] = sudoku[2][2].getValue();
@@ -315,7 +315,7 @@ public class Play {
 			}
 			break;			
 		case 3:
-			int []array3 = new int[9];
+			int[]array3 = new int[9];
 			array3[0] = sudoku[0][6].getValue(); array3[1] = sudoku[0][7].getValue(); array3[2] = sudoku[0][8].getValue(); 
 			array3[3] = sudoku[1][6].getValue(); array3[4] = sudoku[1][7].getValue(); array3[5] = sudoku[1][8].getValue();
 			array3[6] = sudoku[2][6].getValue(); array3[7] = sudoku[2][7].getValue(); array3[8] = sudoku[2][8].getValue();
@@ -328,7 +328,7 @@ public class Play {
 			}
 			break;				
 		case 4:
-			int []array4 = new int[9];
+			int[]array4 = new int[9];
 			array4[0] = sudoku[3][0].getValue(); array4[1] = sudoku[3][1].getValue(); array4[2] = sudoku[3][2].getValue(); 
 			array4[3] =	sudoku[4][0].getValue(); array4[4] = sudoku[4][1].getValue(); array4[5] = sudoku[4][2].getValue();
 			array4[6] =	sudoku[5][0].getValue(); array4[7] = sudoku[5][1].getValue(); array4[8] = sudoku[5][2].getValue();
@@ -341,7 +341,7 @@ public class Play {
 			}				
 			break;			
 		case 5:
-			int []array5 = new int[9];
+			int[]array5 = new int[9];
 			array5[0] = sudoku[3][3].getValue(); array5[1] = sudoku[3][4].getValue(); array5[2] = sudoku[3][5].getValue(); 
 			array5[3] = sudoku[4][3].getValue(); array5[4] = sudoku[4][4].getValue(); array5[5] = sudoku[4][5].getValue();
 			array5[6] = sudoku[5][3].getValue(); array5[7] = sudoku[5][4].getValue(); array5[8] = sudoku[5][5].getValue();
@@ -354,7 +354,7 @@ public class Play {
 			}
 			break;					
 		case 6:
-			int []array6 = new int[9];
+			int[]array6 = new int[9];
 			array6[0] = sudoku[3][6].getValue(); array6[1] = sudoku[3][7].getValue(); array6[2] = sudoku[3][8].getValue(); 
 			array6[3] =	sudoku[4][6].getValue(); array6[4] = sudoku[4][7].getValue(); array6[5] = sudoku[4][8].getValue();
 			array6[6] = sudoku[5][6].getValue(); array6[7] = sudoku[5][7].getValue(); array6[8] = sudoku[5][8].getValue();
@@ -380,7 +380,7 @@ public class Play {
 			}
 			break;			
 		case 8:
-			int []array8 = new int[9];
+			int[]array8 = new int[9];
 			array8[0] = sudoku[6][3].getValue(); array8[1] = sudoku[6][4].getValue(); array8[2] = sudoku[6][5].getValue(); 
 			array8[3] = sudoku[7][3].getValue(); array8[4] = sudoku[7][4].getValue(); array8[5] = sudoku[7][5].getValue();
 			array8[6] =	sudoku[8][3].getValue(); array8[7] = sudoku[8][4].getValue(); array8[8] = sudoku[8][5].getValue();
@@ -412,6 +412,5 @@ public class Play {
 		return arrayTest;
 	}
 }
-
 
 
