@@ -12,7 +12,7 @@ public class Play {
 	private ArrayElement [][] sudoku;
 	private String election;
 	private int zeroCount;
-	private int squadNumber;
+	private int squareNumber;
 	private int testValue;
 	private int electionCast;
 	private boolean rowTest;
@@ -27,7 +27,7 @@ public class Play {
 		 introCol = 0;
 		 election = " ";
 		 zeroCount = 0;
-		 squadNumber = 0;
+		 squareNumber = 0;
 		 testValue = 0;
 		 electionCast = 0;
 		 rowTest = true;
@@ -84,7 +84,7 @@ public class Play {
 	}
 	
 	//------------------------------------------------------------------------------------------------------------------------------
-	// SUDOKU PRINT METHODS.
+	// METHODS THAT PRINT SUDOKU.
 	//------------------------------------------------------------------------------------------------------------------------------
 	
 	/* Método que imprime sudoku, que es un array de dos dimensiones con objetos de la clase ArrayElement.
@@ -158,34 +158,34 @@ public class Play {
 	}
 		
 	//------------------------------------------------------------------------------------------------------------------------------
-	// INFORMATION RETURN METHODS.
+	// METHODS THAT RETURN DATA.
 	//------------------------------------------------------------------------------------------------------------------------------
 	
 	/* Método que devueve un entero con el número de cuadrado donde se encuentra la posición elegida. */	
 	public int giveMeChoosenSquare () {		
 			
 		if((introRow-1==0 || introRow-1==1 || introRow-1==2) && (introCol-1==0 || introCol-1==1 || introCol-1==2)) {
-			squadNumber = 1;
+			squareNumber = 1;
 		}else if((introRow-1==0 || introRow-1==1 || introRow-1==2) && (introCol-1==3 || introCol-1==4 || introCol-1==5)) {
-			squadNumber = 2;
+			squareNumber = 2;
 		}else if((introRow-1==0 || introRow-1==1 || introRow-1==2) && (introCol-1==6 || introCol-1==7 || introCol-1==8)) {
-			squadNumber = 3;
+			squareNumber = 3;
 		}else if((introRow-1==3 || introRow-1==4 || introRow-1==5) && (introCol-1==0 || introCol-1==1 || introCol-1==2)) {
-			squadNumber = 4;
+			squareNumber = 4;
 		}else if((introRow-1==3 || introRow-1==4 || introRow-1==5) && (introCol-1==3 || introCol-1==4 || introCol-1==5)) {
-			squadNumber = 5;
+			squareNumber = 5;
 		}else if((introRow-1==3 || introRow-1==4 || introRow-1==5) && (introCol-1==6 || introCol-1==7 || introCol-1==8)) {
-			squadNumber = 6;
+			squareNumber = 6;
 		}else if((introRow-1==6 || introRow-1==7 || introRow-1==8) && (introCol-1==0 || introCol-1==1 || introCol-1==2)) {
-			squadNumber = 7;
+			squareNumber = 7;
 		}else if((introRow-1==6 || introRow-1==7 || introRow-1==8) && (introCol-1==3 || introCol-1==4 || introCol-1==5)) {
-			squadNumber = 8;
+			squareNumber = 8;
 		}else if((introRow-1==6 || introRow-1==7 || introRow-1==8) && (introCol-1==6 || introCol-1==7 || introCol-1==8)) {
-			squadNumber = 9;
+			squareNumber = 9;
 		}else {
 			Console.showLineBreak("There is an ERROR with the choosen square !!");
 		}
-		return squadNumber;
+		return squareNumber;
 	}
 	
 	//------------------------------------------------------------------------------------------------------------------------------
@@ -256,8 +256,8 @@ public class Play {
 						}					
 					}
 				}
-				squadNumber = giveMeChoosenSquare();
-				squareTest = checkSquare(squadNumber, testValue);
+				squareNumber = giveMeChoosenSquare();
+				squareTest = checkSquare(squareNumber, testValue);
 				//showFullSudoku();
 				// no hace falta establecer el valor anterior, porque el valor introducido primero se comprueba antes de establecerlo.
 				/*if(!introValue) {
