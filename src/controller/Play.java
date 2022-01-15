@@ -52,7 +52,8 @@ public class Play {
 	
 	// Method that asks if you want sudoku 1 or 2.
 	public void chooseSudoku() {			
-		// Loop: asks the user for the sudoku number in String and casts the choice to integer, as long as no one or two is entered.
+		/* Loop: asks the user for the sudoku number in String 
+		 * and casts the choice to integer, as long as no one or two is entered. */
 		do {
 			election = Console.giveMeSudoku();
 			electionCast = Integer.parseInt(election);
@@ -64,12 +65,12 @@ public class Play {
 		case 2: fillArray(Sudoku.getSudoku02()); break;
 		}							
 	}
-		
-	/* No lo llamo desde el main, porque lo utilizo dentro del siguiente método que comprueba
-	 * la fila, la columna y el cuadrado */
-
-	/* Metodo que mediante bucle, pide fila, columna y valor, mientras la fila o la columna superen los l�mites del sudoku
-	 * o mientras la posición elegida sea fija.	*/
+	
+	/* 
+	 * Metodo que mediante bucle, pide fila, columna y valor, 
+	 * mientras la fila o la columna superen los límites del sudoku
+	 * o mientras la posición elegida sea fija.	
+	 * */
 	public void chooseRowCol() {		
 		do {
 			introRow = Console.giveMeRow();
@@ -257,12 +258,7 @@ public class Play {
 					}
 				}
 				squareNumber = giveMeChoosenSquare();
-				squareTest = checkSquare(squareNumber, testValue);
-				//showFullSudoku();
-				// no hace falta establecer el valor anterior, porque el valor introducido primero se comprueba antes de establecerlo.
-				/*if(!introValue) {
-					sudoku[introRow][introCol].setValue(previousValue);
-				}*/				
+				squareTest = checkSquare(squareNumber, testValue);		
 			}while(!rowTest || !colTest || !squareTest);
 			
 			sudoku[introRow-1][introCol-1].setValue(testValue);			
@@ -297,7 +293,7 @@ public class Play {
 			for(int i=0; i<array1.length; i++) {
 				if(array1[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 1 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;				
@@ -310,7 +306,7 @@ public class Play {
 			for(int i=0;i<array2.length;i++) {
 				if(array2[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 2 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;			
@@ -323,7 +319,7 @@ public class Play {
 			for(int i=0 ; i<array3.length; i++) {
 				if(array3[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");	
+					Console.showLineBreak("SQUARE 3 ERROR !! The number introduced MATCHES with other number of the SQUARE.");	
 				}
 			}
 			break;				
@@ -336,7 +332,7 @@ public class Play {
 			for(int i=0; i<array4.length; i++) {
 				if(array4[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 4 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}				
 			break;			
@@ -349,7 +345,7 @@ public class Play {
 			for(int i=0; i<array5.length; i++) {
 				if(array5[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 5 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;					
@@ -362,7 +358,7 @@ public class Play {
 			for(int i=0; i<array6.length; i++) {
 				if(array6[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 6 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;							
@@ -375,7 +371,7 @@ public class Play {
 			for(int i=0; i<array7.length; i++) {
 				if(array7[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 7 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;			
@@ -388,7 +384,7 @@ public class Play {
 			for(int i=0; i<array8.length; i++) {
 				if(array8[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");	
+					Console.showLineBreak("SQUARE 8 ERROR !! The number introduced MATCHES with other number of the SQUARE.");	
 				}
 			}
 			break;			
@@ -401,7 +397,7 @@ public class Play {
 			for(int i=0; i<array9.length; i++) {
 				if(array9[i] == testValue) {
 					arrayTest = false;
-					Console.showLineBreak("SQUARE ERROR !! The number introduced MATCHES with other number of the SQUARE.");
+					Console.showLineBreak("SQUARE 9 ERROR !! The number introduced MATCHES with other number of the SQUARE.");
 				}
 			}
 			break;			
